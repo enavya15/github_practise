@@ -65,6 +65,8 @@ def max_min_vol(filename):
         print("silent")
 
 
+
+
 if __name__ == '__main__':
     #open_app('Music Player')
     #print(play_song())
