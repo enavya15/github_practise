@@ -1,0 +1,103 @@
+github:
+
+1) Install git and create github account
+
+$ sudo apt install git-all
+$ git --version
+
+2) create a local git repository
+create directory in system
+
+i) To initialize a git repository in the root of the folder, run the git init command
+
+git-init - Create an empty Git repository or reinitialize an existing one
+
+syntax: git init
+
+3) Add a new file to the repo
+create a new file using touch cmnd
+
+ii) After creating the new file, you can use the git status command to see which files git knows exist.
+
+git-status - Show the working tree status
+
+syntax : git status
+
+
+iii) A commit is a record of what changes you have made since the last time you made a commit.
+
+
+iv) Add a file to the staging environment using the git add command. 
+
+
+
+Cloning an Existing Repository :
+If you want to get a copy of an existing Git repository
+this command allows creating a local copy of that repository on your local directory from the repository URL. 
+we use git clone
+
+syntax:
+git clone https://github.com/enavya15/github_practise 
+
+
+
+checkout:
+
+The git checkout command is used to switch between branches in a repository.
+ Sometimes this command can be dangerous because there is no undo option available on this command
+ 
+ We can perform many operations by git checkout command like the switch to a specific branch, create a new branch, checkout a remote branch, and more.
+ 
+$git branch #list of branches
+--
+--
+
+op1 : switch to a specific branch
+		$git checkout <branch_name>
+output : Switched to branch 'branch_name'
+
+
+op2: create a new branch
+The git checkout commands let you create and switch to a new branch simultenously
+		$git checkout -b <branchname>  
+output : Switched to a new branch 'my_branch'
+
+op3: Checkout Remote Branch
+it is a way for a programmer to access the work of a colleague or collaborator for review and collaboration
+ So, to check out a remote branch, you have first to fetch the contents of the branch.
+ 
+ $ git fetch --all  
+$ git checkout <remotebranch> origin/<remotebranch>  
+
+
+Git Pull / Pull Request :
+The term pull is used to receive data from GitHub. It fetches and merges changes from the remote server to your working directory. The git pull command is used to pull a repository.
+ 
+ 
+Git Push
+The push term refers to upload local repository content to a remote repository. Pushing is an act of transfer commits from your local repository to a remote repository.
+		$ git push <option> [<Remote URL><branch name><refspec>...]  
+
+
+git remote -v 
+git remote remove origin 
+git remote add origin git@github.com:user/repo.git  
+==================================================================
+
+github desktop download in linux
+
+sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.6.3-linux1/GitHubDesktop-linux-2.6.3-linux1.deb
+sudo apt-get install gdebi-core
+sudo gdebi /home/your_username/GitHubDesktop-linux-2.6.3-linux1.deb
+
+char *mqttr[100] = {0}
+
+
+
+
+enavya_1998
+
+
+
+
+
